@@ -1,9 +1,7 @@
 def fact(n):
-    
-    if n!=1:
-        return n*fact(n-1)
-    else:
-        return 1
+    mul = 1
+    for i in range(n,0,-1):
+        mul = mul*i
+    return mul
 
-
-print(fact(3))
+print(fact(5))
